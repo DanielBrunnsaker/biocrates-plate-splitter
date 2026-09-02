@@ -11,7 +11,7 @@ reserved for blanks/calibrators/QC samples, three more QC2 wells are
 scattered at A6/C9/E12, and everything else (79 wells) is free for actual
 samples. When you have several studies' worth of samples to run, you want to:
 
-- use as few plates (and kits) as possible via bin-packing, with sample order
+- use as few plates (and kits) as possible via [bin-packing](https://en.wikipedia.org/wiki/Bin_packing_problem), with sample order
   randomized (toggleable, seeded) within each box, or across a whole study if
   no boxes are set,
 - keep each study's samples contiguous / on as few plates as possible rather
