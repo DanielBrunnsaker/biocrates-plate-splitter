@@ -52,9 +52,3 @@ Then open http://127.0.0.1:8050.
 (Optional) For AI-assisted parsing of pasted/uploaded text, run
 [Ollama](https://ollama.com) locally with a model pulled — the app will pick
 it up automatically.
-
-## Data
-
-This repository contains no sample data, plate layouts, or study information
-— it's application code only. All sample data lives only in your local
-session (in-memory) and in whatever files you choose to export.
