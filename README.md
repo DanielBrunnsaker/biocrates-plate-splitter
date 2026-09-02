@@ -11,7 +11,9 @@ reserved for blanks/calibrators/QC samples, three more QC2 wells are
 scattered at A6/C9/E12, and everything else (79 wells) is free for actual
 samples. When you have several studies' worth of samples to run, you want to:
 
-- use as few plates (and kits) as possible,
+- use as few plates (and kits) as possible via bin-packing, with sample order
+  randomized (toggleable, seeded) within each box, or across a whole study if
+  no boxes are set,
 - keep each study's samples contiguous / on as few plates as possible rather
   than scattered,
 - respect sample logistics — e.g. repeat/paired samples stay together, and
@@ -21,11 +23,6 @@ samples. When you have several studies' worth of samples to run, you want to:
   plates,
 - when two studies have to share a plate, keep them visually and physically
   separated (left/right) rather than interleaved.
-
-By default the app also randomizes sample order (toggleable, seeded for
-reproducibility) — within each box if boxes are set, or across a study's
-whole sample list otherwise. Randomization never mixes samples between
-different studies.
 
 Plate Splitter takes a sample list (per study), runs a packing algorithm that
 balances those constraints, and gives you:
